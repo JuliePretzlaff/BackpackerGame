@@ -17,14 +17,14 @@ namespace BackpackerGame
             Hiker hiker1 = new Hiker(name);
 
             //pick backpack items:
-            //1 tent 2 sleepingbag 3pad 4 stove 5 first aid kit  6 
-            Console.WriteLine("\nWhen you started your overnight camping trip, had enough space in your backpack to hold 10 meals of food, plus 12 items." +
+            Console.WriteLine("\nWhen you started your overnight camping trip, had enough space in your backpack to " +
+                "hold 10 meals of food, plus 12 items." +
                 "\nFrom the below items, please choose 10 to place in your pack.  After each selection, press enter.");
             Console.WriteLine("stove and fuel \nflint \nmatches");
             Console.WriteLine("tent \nsleeping bag \nhammock");
             Console.WriteLine("first aid kit \nknife \nrope");
             Console.WriteLine("rain coat \nwarm clothes \ngood book");
-            Console.WriteLine("camera \n flashlight \nbear canister");
+            Console.WriteLine("camera \nflashlight \nbear canister");
             Pack.FillPack();
 
 
@@ -37,7 +37,10 @@ namespace BackpackerGame
             //opening status display:
             hiker1.StatusDisplay();
 
-           // Console.WriteLine("Hiker {0}, on the);
+           Console.WriteLine("Hiker {0}, on the first night of your hike, you take a wrong turn and get lost, " +
+               "and your map blows away down a ravine.  See if you can take care of yourself in the wilderness " +
+               "until you can find your way back to civilization!" +
+               "Ration your food, use your gear, and make smart decisions!");
 
 
             

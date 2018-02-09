@@ -28,7 +28,7 @@ namespace BackpackerGame
                 }
             }
 
-            Console.WriteLine("\nHere is what's in your pack!");
+            Console.WriteLine("\nGreat!  Here is what's in your pack!");
             for (int i = 0; i < backpack.Length; i++)
             {
                 Console.WriteLine(backpack[i]);
