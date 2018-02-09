@@ -16,6 +16,7 @@ namespace BackpackerGame
         public int Energy { get; set; }
         public int Morale { get; set; }
         public int Health { get; set; }
+        public int Orientation { get; set; }
 
         //constructor:
         public Hiker(string name)
@@ -39,7 +40,25 @@ namespace BackpackerGame
             Console.WriteLine("Energy: " + Energy);
             Console.WriteLine("Morale: " + Morale);
             Console.WriteLine("Health: " + Health);
+            Console.WriteLine("Orientation: " + Orientation);
         }
+
+        public void Tick()
+        {
+            Random r = new Random();
+            int[] randomNumber = new int[1];
+            for (int i = 0; i < randomNumber.Length; i++)
+            {
+                randomNumber[i] = r.Next(-1, 1);
+            }
+
+            Morale += randomNumber[0];
+            Hunger -= 1;
+            Thirst -= 1;
+
+
+        }
+
 
     }
 }
